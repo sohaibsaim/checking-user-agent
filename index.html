@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking User Agent</title>
+</head>
+<body>
+    <h1>Checking User Agent</h1>
+
+    <button onclick="displayUserAgent()">Check User Agent</button>
+</body>
+
+<script>
+    // Function to get the user agent string
+    function getUserAgent() {
+        return navigator.userAgent;
+    }
+
+    // Function to display user agent in an alert box
+    function displayUserAgent() {
+        var userAgent = getUserAgent();
+        alert("User Agent: " + userAgent);
+    }
+</script>
+</html>
